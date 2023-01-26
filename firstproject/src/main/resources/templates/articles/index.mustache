@@ -13,11 +13,13 @@
     <!--여기 부분은 마치 for문 처럼 반복하며 데이터를 출력하는 거다-->
         <tr>
             <th>{{id}}</th>
-            <td>{{title}}</td>
+            <td><a href="/articles/{{id}}">{{title}}</a></td>
             <td>{{content}}</td>
         </tr>
     {{/articleList}}
     </tbody>
 </table>
+
+<a href="/articles/new">New Article</a>
 
 {{>layouts/footer}}
